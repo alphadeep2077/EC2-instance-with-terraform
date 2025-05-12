@@ -15,20 +15,20 @@ This project automates the provisioning of an AWS EC2 instance using **Terraform
 3. **Run Terraform**:
 
 - Initialize the Terraform configuration:
-code : 
+```bash
 terraform init
-
+```
 - Apply the Terraform configuration to provision the EC2 instance:
-code :
+```bash
 terraform apply
-
+```
 
 4. **Access EC2** :
 Once the instance is created, you can SSH into it using the configured SSH key:
 
-code :
+```bash
 ssh -i my-ssh-key.pem ec2-user@<EC2_PUBLIC_IP>
-
+```
 Technologies Used:
 
 - Terraform
